@@ -1,0 +1,93 @@
+/* ========================================= google fonts ========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
+/* =========================================== custom variables =========================================== */
+:root {
+  --black: #252525;
+  --grey: #acacac;
+  --box-shadow: 0 0 10px 6px #d5d5d5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.project-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.headline {
+  color: var(--black);
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.description {
+  color: var(--grey);
+  text-transform: capitalize;
+}
+
+.image-slider-container {
+  width: 70vw;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-slider {
+  display: flex;
+  scroll-behavior: smooth;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slides {
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  object-fit: cover;
+  object-position: center;
+  flex: 0 0 100%;
+}
+
+.first_slidepic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/learn1.jpg");
+}
+
+.second_slidepic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/learn2.jpg");
+}
+
+.third_slidepic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/learn3.jpg");
+}
+
+.fourth_slidepic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/learn4.jpg");
+}
+
+.slider-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px auto;
+}
+
+.slider-controls i {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
