@@ -54,9 +54,17 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  object-fit: cover;
-  object-position: center;
+  position: relative;
   flex: 0 0 100%;
+}
+
+.slide-indicator {
+  position: absolute;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  bottom: 10px;
+  left: 10px;
 }
 
 .first_slidepic {
