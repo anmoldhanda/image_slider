@@ -1,9 +1,19 @@
-const image_slider_container = document.querySelector(".image-slider-container");
 const images_slider = document.querySelector(".image-slider");
 const slides = document.querySelectorAll(".slides");
 const previous_slide_icon = document.getElementById("previous-slide-icon");
 const next_slide_icon = document.getElementById("next-slide-icon");
 let current_slide_index = 0;
+
+setInterval(() => {
+  // =============================== it will execute the previous & next slide function after every 3 seconds & increment the current slide index ===============================
+  change_images();
+}, 3000);
+
+const change_images = () => {
+  current_slide_index++;
+  previous_slide();
+  next_slide();
+}
 
 const previous_slide = () => {
   if (current_slide_index === 0) {
